@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  margin-top: 200px;
+}
+
+button {
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  color: #424242;
+  background-color: #EEEFF1;
+  box-shadow: 1px 1px 5px #000;
+  font-size: 4vw;
+  font-family: sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 15vw;
+  font-family: sans-serif;
+  color: #424242;
+}

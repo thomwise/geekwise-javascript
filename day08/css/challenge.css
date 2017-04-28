@@ -1,0 +1,32 @@
+/*body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  width: 50%;
+  margin-top: 10%;
+  background-color: #474747;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #000;
+
+}
+
+div img {
+  width: 70%;
+  margin-left: 15%;
+}*/
+
+body {
+  position: relative;
+}
+
+div {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+}
