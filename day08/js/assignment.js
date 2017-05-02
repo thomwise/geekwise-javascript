@@ -31,15 +31,19 @@ divideBtn.addEventListener('click', function(e) {
 
 // Christmas
 
-input = document.getElementsByTagName('input')[6];
+inputXmas = document.getElementById('xmas');
 
-setInterval(function() {
-  var now = new Date().getTime(),
-      xmas = new Date('December 25 2017').getTime(),
+setInterval( function() {
+  var now = new Date(),
+      xmas = new Date(now.getFullYear(), 11, 25),
       counter = xmas - now,
-      days = Math.floor(counter / (1000 * 60 * 60 * 24));
+      days = Math.ceil(counter / (1000 * 60 * 60 * 24));
 
-  input.value = days;
+if (now.getMonth() == 11 && now.getDate() > 25){
+  xmas.setFullYear(xmas.getFullYear() + 1);
+}
+
+  inputXmas.children[0].value = days;
 }, 1000);
 
 // Convert Temperature
